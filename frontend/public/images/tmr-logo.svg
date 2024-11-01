@@ -1,0 +1,62 @@
+<svg viewBox="0 0 400 200" xmlns="http://www.w3.org/2000/svg">
+    <!-- Chopsticks & Spoon Group -->
+    <g transform="translate(20, 45)">
+        <!-- Chopsticks -->
+        <rect x="65" y="15" width="6" height="75" rx="1" fill="#2B2B2B"/>
+        <rect x="55" y="15" width="6" height="75" rx="1" fill="#2B2B2B"/>
+        
+        <!-- Spoon -->
+        <rect x="30" y="35" width="10" height="55" rx="2" fill="#2B2B2B"/>
+        <ellipse cx="35" cy="32" rx="11" ry="15" fill="#2B2B2B"/>
+    </g>
+
+    <!-- TMR Letters -->
+    <g transform="translate(130, 40)">
+        <text font-family="Arial Black, sans-serif" font-size="65" font-weight="900" fill="#2B2B2B">
+            <tspan x="0" y="55">TMR</tspan>
+        </text>
+        <!-- Subtitle -->
+        <text font-family="Arial, sans-serif" font-size="14" fill="#666666">
+            <tspan x="5" y="75">Today's Menu Recommendation</tspan>
+            <tspan x="5" y="95">오늘의 음식 메뉴를 추천해주는 TMR</tspan>
+        </text>
+    </g>
+
+    <!-- 선택적인 장식 요소 -->
+<svg viewBox="0 0 140 160">
+  <!-- 필터 정의 -->
+  <defs>
+    <linearGradient id="plateDepth" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#ffffff" stop-opacity="0.1"/>
+      <stop offset="100%" style="stop-color:#2B2B2B" stop-opacity="0.2"/>
+    </linearGradient>
+    
+    <filter id="softShadow">
+      <feGaussianBlur in="SourceAlpha" stdDeviation="2"/>
+      <feOffset dx="0" dy="2" result="offsetblur"/>
+      <feComponentTransfer>
+        <feFuncA type="linear" slope="0.2"/>
+      </feComponentTransfer>
+      <feMerge> 
+        <feMergeNode/>
+        <feMergeNode in="SourceGraphic"/> 
+      </feMerge>
+    </filter>
+  </defs>
+
+  <!-- 바깥 원 -->
+  <circle cx="-35" cy="80" r="50" 
+          fill="none" 
+          stroke="#2B2B2B" 
+          stroke-width="1.5"
+          opacity="1"/>
+          
+  <!-- 내부 원 (접시처럼 파인 효과) -->
+  <circle cx="-35" cy="80" r="38" 
+          fill="url(#plateDepth)"
+          stroke="#2B2B2B" 
+          stroke-width="1"
+          opacity="0.9"
+          filter="url(#softShadow)"/>
+</svg>
+</svg>

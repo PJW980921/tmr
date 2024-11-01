@@ -1,0 +1,19 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  /* reset.css의 확장 */
+
+  :root {
+    font-size: 62.5%;
+    font-family: 'Arial';
+  }
+}
+@layer components {
+  /* 자주쓰는 속성들끼리 모아 커스텀 속성을 만들 수 있다. */
+  /* <div className="flexCenter"> 처럼 적용 가능 */
+  .flexCenter {
+    @apply flex flex-col items-center justify-center;
+  }
+}
