@@ -9,7 +9,7 @@ import Link from 'next/link';
 export default function Home() {
   return (
     <>
-      <Headers isLoggedIn={false} />
+      <Headers />
       <main className="flex flex-col justify-center items-center gap-[10rem] px-[40rem] sm:px-6">
         <section className="flex flex-col">
           <Image

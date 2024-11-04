@@ -6,7 +6,7 @@ const SignUp = () => {
   return (
     <div className="flex flex-col justify-center items-center gap-3 ">
       <Link href={'/'}>
-        <Image src={Logo} alt="TMR Logo Image" />
+        <Image src={Logo} alt="TMR Logo Image" priority={true} />
       </Link>
 
       <SignUpForm />
