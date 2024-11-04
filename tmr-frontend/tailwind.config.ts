@@ -34,6 +34,9 @@ const config: Config = {
       gray: {
         9: '#9D9D9D',
       },
+      red: {
+        F: '#F12F2F',
+      },
     },
   },
   plugins: [],

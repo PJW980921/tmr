@@ -1,4 +1,5 @@
 import { ReactNode } from 'react';
+import Providers from './providers';
 
 interface SubPagesLayoutProps {
   children: ReactNode;
@@ -6,8 +7,10 @@ interface SubPagesLayoutProps {
 
 export default function SubPagesLayout({ children }: SubPagesLayoutProps) {
   return (
-    <main className="flex min-h-screen flex-col items-center justify-center px-16">
-      {children}
-    </main>
+    <Providers>
+      <main className="flex min-h-screen flex-col items-center justify-center px-16">
+        {children}
+      </main>
+    </Providers>
   );
 }

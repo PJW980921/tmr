@@ -10,7 +10,7 @@ export default function Home() {
   return (
     <>
       <Headers isLoggedIn={false} />
-      <main className="flex flex-col justify-center items-center gap-[10rem] sm:px-6">
+      <main className="flex flex-col justify-center items-center gap-[10rem] px-[40rem] sm:px-6">
         <section className="flex flex-col">
           <Image
             src={Logo}
@@ -20,9 +20,9 @@ export default function Home() {
             className="w-[65rem] h-auto pl-10"
           />
         </section>
-        <section className="relative flex flex-row items-center justify-center md:flex-col sm:flex-col gap-3 bg-black-2 rounded-[12rem] ">
+        <section className="relative w-full flex flex-row items-center justify-center md:flex-col sm:flex-col gap-3 bg-black-2 rounded-[12rem] ">
           <div className="flex flex-row justify-around items-center px-[10rem] gap-9 md:flex-col-reverse sm:flex-col-reverse">
-            <p className="flex justify-center items-center md:translate-y-[-7rem] sm:translate-y-[-7rem] font-bmHannaAir text-wrap text-[3rem] sm:text-[2rem] text-white-F font-bold">
+            <p className="flex justify-center items-center  font-bmHannaAir text-wrap text-[3rem] sm:text-[2rem] text-white-F font-bold">
               오메추!
               <br />
               한식/양식/중식/일식/후식 별로
@@ -31,30 +31,30 @@ export default function Home() {
             <Image
               src={FirstOnboardingImage}
               width={654}
-              height={585}
+              height={0}
               alt="TMR onboarding Image"
-              className="w-[65.4rem] h-[58.5rem] rounded-[8rem] md:w-[45.4rem]"
+              className="w-[65.4rem] rounded-[8rem] "
             />
           </div>
-          <p className="font-bmHannaPro text-[10rem] md:text-[8rem] sm:text-[5rem] font-bold absolute  text-gray-9 translate-x-[-50rem] md:translate-x-[-26rem] sm:translate-x-[-11rem] translate-y-[-28rem] md:translate-y-[-36rem]  -rotate-12 opacity-50">
+          <p className="font-bmHannaPro text-[10rem] md:text-[8rem] sm:text-[5rem] font-bold absolute  text-gray-9 translate-x-[-140%]  translate-y-[-180%]   -rotate-12 opacity-50">
             Point 01
           </p>
         </section>
-        <section className="relative flex flex-row items-center justify-center md:flex-col sm:flex-col gap-3 bg-black-2 rounded-[12rem] ">
+        <section className="relative w-full flex flex-row items-center justify-center md:flex-col sm:flex-col gap-3 bg-black-2 rounded-[12rem] ">
           <div className="flex flex-row justify-around items-center px-[10rem] gap-9 md:flex-col sm:flex-col">
             <Image
               src={SecondOnboardingImage}
               alt="TMR onboarding Image"
               width={654}
-              height={585}
-              className="w-[65.4rem] h-[58.5rem] rounded-[8rem] md:w-[45.4rem]"
+              height={0}
+              className="w-[65.4rem]  rounded-[8rem] "
             />
-            <p className="flex justify-center items-center md:translate-y-[-7rem] sm:translate-y-[-7rem] font-bmHannaAir text-wrap text-[3rem] sm:text-[2rem] text-white-F font-bold">
+            <p className="flex justify-center items-center  font-bmHannaAir text-wrap text-[3rem] sm:text-[2rem] text-white-F font-bold">
               게시판을 통해 사람들과 <br />
               추천 할 음식 메뉴를 공유 해보세요!
             </p>
           </div>
-          <p className="font-bmHannaPro text-[10rem] md:text-[8rem] sm:text-[5rem] font-bold absolute  text-gray-9 translate-x-[-50rem] md:translate-x-[-26rem] sm:translate-x-[-11rem] translate-y-[-28rem] md:translate-y-[-34rem] sm:translate-y-[-34rem] -rotate-12 opacity-50">
+          <p className="font-bmHannaPro text-[10rem] md:text-[8rem] sm:text-[5rem] font-bold absolute  text-gray-9 translate-x-[-140%]  translate-y-[-170%]  -rotate-12 opacity-50">
             Point 02
           </p>
         </section>

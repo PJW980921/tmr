@@ -1,4 +1,4 @@
-import { ButtonSize, ButtonType, ButtonVariant } from '@/app/types/button';
+import { ButtonSize, ButtonType, ButtonVariant } from './button';
 import React, { memo } from 'react';
 
 interface ButtonProps extends React.ButtonHTMLAttributes<HTMLButtonElement> {
@@ -43,13 +43,16 @@ const Button = memo(
           styles +=
             ' w-[28.1rem] h-[7.3rem] rounded-[0.6rem] sm:w-[30.1rem] sm:h-[8rem] sm:rounded-[0.7rem] md:w-[32.1rem] md:h-[8.8rem] md:rounded-[0.8rem]';
           break;
+        case 'sign':
+          styles += ' w-full h-[6rem] rounded-[0.8rem]';
+          break;
       }
 
       // 변형별 스타일
       switch (variant) {
         case 'primary':
           styles +=
-            ' bg-[#2B2B2B] text-[#FFFFFF] text-[1.2rem] sm:text-[1.4rem] md:text-[1.6rem]';
+            ' bg-[#2B2B2B] text-[#FFFFFF] text-[2.2rem] sm:text-[1.4rem] md:text-[1.6rem]';
           break;
         case 'cancel':
           styles +=

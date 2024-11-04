@@ -28,8 +28,8 @@ createConnection({
     app.use(express.json());
     app.use(express.urlencoded({ extended: false }));
 
-    app.post('/register', (req: Request, res: Response) => {
-      AuthController.register(req, res);
+    app.post('/signup', (req: Request, res: Response) => {
+      AuthController.signup(req, res);
     });
 
     app.listen(PORT, () => {
