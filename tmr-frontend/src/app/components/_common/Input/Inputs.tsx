@@ -11,6 +11,7 @@ export const Inputs = forwardRef<HTMLInputElement, InputProps>(
         <input
           ref={ref}
           type={type}
+          autoComplete="current-password"
           className={`
             w-full h-[6rem] 
             rounded-[0.8rem] 

@@ -65,12 +65,7 @@ export const SignUpForm = () => {
       </Form.Field>
 
       <Form.Submit>
-        <Button
-          type="submit"
-          size="sign"
-          variant="primary"
-          isLoading={signUpMutation.isPending}
-        >
+        <Button type="submit" size="sign" variant="primary">
           회원가입
         </Button>
       </Form.Submit>
