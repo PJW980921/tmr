@@ -2,11 +2,15 @@
 import { useForm } from 'react-hook-form';
 import { Form } from '../Form/Form';
 import { useMutation } from '@tanstack/react-query';
-import axios from 'axios';
+import axios, { AxiosError } from 'axios';
 import { Inputs } from '../Input/Inputs';
 import Button from '../Button/Buttons';
 import { SignUpFormData } from '@/app/api/auth/type';
 import { useRouter } from 'next/navigation';
+
+interface ErrorResponse {
+  message: string;
+}
 
 export const SignUpForm = () => {
   const {
@@ -25,8 +29,8 @@ export const SignUpForm = () => {
       alert('회원가입 성공');
       router.push('/signin');
     },
-    onError: () => {
-      alert(errors);
+    onError: (error: AxiosError<ErrorResponse>) => {
+      alert(error.response?.data?.message);
     },
   });
 
